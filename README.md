@@ -44,9 +44,9 @@ To enhance this analysis and improve model robustness, future work could include
 
 
 Technologies Used
-Python
-Pandas (for data manipulation)
-NumPy (for numerical operations)
-Scikit-learn (for machine learning models, preprocessing, and evaluation)
-Matplotlib (for plotting)
+Python, 
+Pandas (for data manipulation), 
+NumPy (for numerical operations), 
+Scikit-learn (for machine learning models, preprocessing, and evaluation), 
+Matplotlib (for plotting), 
 Seaborn (for advanced visualizations)
