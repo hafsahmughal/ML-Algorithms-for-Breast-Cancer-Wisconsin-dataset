@@ -14,6 +14,7 @@ Data Preprocessing:
 Column Renaming: Features were assigned descriptive names based on the provided data dictionary.
 
 Categorical Encoding: The 'Diagnosis' target variable ('M' and 'B') was converted into numerical format (1 for Malignant, 0 for Benign) and a human-readable label column was created for visualizations.
+
 Feature Scaling: All numerical features were scaled using StandardScaler to ensure consistent ranges and prevent dominance by features with larger magnitudes.
 
 Dimensionality Reduction (PCA):
