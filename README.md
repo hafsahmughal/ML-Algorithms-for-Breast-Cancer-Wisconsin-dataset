@@ -23,6 +23,8 @@ A 2-component PCA was also performed for visualization purposes, allowing for a 
 
 Exploratory Data Analysis (EDA): Visualizations were created to understand the data distribution, correlations between features, and the relationship between key features and the target variable. This included a diagnosis distribution plot, a correlation heatmap, a boxplot comparing radius_mean across diagnoses, and a PCA visualization with eigenvectors and confidence ellipses.
 
+Saved visualizations are stored in the `images/` folder, including `correlation_heatmap.png`, `diagnosis_distribution.png`, `pca_eigenvectors.png`, and `radius_mean_diagnosis.png`.
+
 Data Splitting: The preprocessed and dimensionality-reduced data was split into training (80%) and testing (20%) sets to ensure robust model evaluation.
 
 Model Building & Training
