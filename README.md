@@ -74,7 +74,7 @@ Below are the key visualizations generated in this project:
 
 **diagnosis_distribution.png (Distribution of Diagnosis)**
 - What it shows: This bar chart illustrates the count of each diagnosis category ('Benign' and 'Malignant') in the dataset.
-- Insight: It helps understand the balance of the target variable. In this case, there are more 'Benign' cases than 'Malignant' cases, indicating class imbalance that may need to be addressed in advanced modeling.
+- Insight: It helps understand the balance of the target variable. In this case, there are more 'Benign' cases than 'Malignant' cases, indicating the difference in breast lesion cateogories.
 
 ![Correlation Heatmap](images/correlation_heatmap.png)
 
@@ -105,7 +105,6 @@ Potential improvements include:
 
 - Implementing K-fold cross-validation for more reliable model evaluation
 - Performing a deeper analysis of PCA loadings to understand feature importance
-- Exploring additional feature engineering and model tuning
 
 ## Technologies Used
 - Python
