@@ -25,7 +25,9 @@ Exploratory Data Analysis (EDA): Visualizations were created to understand the d
 
 Data Splitting: The preprocessed and dimensionality-reduced data was split into training (80%) and testing (20%) sets to ensure robust model evaluation.
 
-Model Building & Training: Five popular classification algorithms were trained on the processed data:
+Model Building & Training
+
+Five popular classification algorithms were trained on the processed data:
 
 Logistic Regression
 
