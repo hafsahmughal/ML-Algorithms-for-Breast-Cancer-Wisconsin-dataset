@@ -5,6 +5,7 @@ Dataset
 The project utilizes the Breast Cancer Wisconsin (Diagnostic) dataset, which contains 569 samples with 30 real-valued features computed from the digital images, along with an ID number and a diagnosis (M = Malignant, B = Benign).
 
 Methodology
+
 The following steps were performed in this analysis:
 
 Data Loading & Initial Inspection: The dataset was loaded, and initial checks were performed to understand its structure, types, and presence of missing values.
