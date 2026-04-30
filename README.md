@@ -26,10 +26,15 @@ Exploratory Data Analysis (EDA): Visualizations were created to understand the d
 Data Splitting: The preprocessed and dimensionality-reduced data was split into training (80%) and testing (20%) sets to ensure robust model evaluation.
 
 Model Building & Training: Five popular classification algorithms were trained on the processed data:
+
 Logistic Regression
+
 K-Nearest Neighbors (KNN)
+
 Decision Tree Classifier
+
 Random Forest Classifier
+
 Support Vector Machine (SVM)
 
 Model Evaluation: Each model's performance was assessed using key metrics such as Accuracy, Precision, Recall, and F1-Score. Confusion matrices were generated to provide a detailed view of true positives, true negatives, false positives, and false negatives. Training times were also recorded for comparison.
