@@ -1,64 +1,83 @@
-# Comparative Analysis of Machine Learning Algorithms for Breast Cancer Wisconsin dataset - Breast Cancer Prediction Project
-This project focuses on building and evaluating machine learning models to predict breast cancer based on features extracted from digitized images of fine needle aspirate (FNA) of a breast mass. The goal is to classify a mass as either Benign (non-cancerous) or Malignant (cancerous).
+# Comparative Analysis of Machine Learning Algorithms for Breast Cancer Wisconsin Dataset
 
-Dataset
-The project utilizes the Breast Cancer Wisconsin (Diagnostic) dataset, which contains 569 samples with 30 real-valued features computed from the digital images, along with an ID number and a diagnosis (M = Malignant, B = Benign).
+## Overview
+This project builds and evaluates machine learning models to predict breast cancer from features extracted from digitized fine needle aspirate (FNA) images. The goal is to classify tumors as either **Benign** or **Malignant**.
 
-Methodology
+## Dataset
+The analysis uses the Breast Cancer Wisconsin (Diagnostic) dataset, which contains:
 
-The following steps were performed in this analysis:
+- 569 samples
+- 30 real-valued features computed from digitized images
+- an ID number for each sample
+- a diagnosis label: `M = Malignant`, `B = Benign`
 
-Data Loading & Initial Inspection: The dataset was loaded, and initial checks were performed to understand its structure, types, and presence of missing values.
-Data Preprocessing:
+## Methodology
+The analysis follows these main steps:
 
-Column Renaming: Features were assigned descriptive names based on the provided data dictionary.
+### 1. Data Loading & Inspection
+- Load the dataset
+- Check structure, data types, and missing values
 
-Categorical Encoding: The 'Diagnosis' target variable ('M' and 'B') was converted into numerical format (1 for Malignant, 0 for Benign) and a human-readable label column was created for visualizations.
+### 2. Data Preprocessing
+- Rename columns using the provided data dictionary
+- Encode the `Diagnosis` target as numeric values (`M = 1`, `B = 0`)
+- Scale numerical features with `StandardScaler`
 
-Feature Scaling: All numerical features were scaled using StandardScaler to ensure consistent ranges and prevent dominance by features with larger magnitudes.
+### 3. Dimensionality Reduction
+- Apply Principal Component Analysis (PCA) to retain 95% of the variance
+- Create a 2-component PCA projection for visualization
 
-Dimensionality Reduction (PCA):
-Principal Component Analysis (PCA) was applied to reduce the feature space while retaining 95% of the variance, resulting in a more compact and potentially less noisy dataset for modeling.
-A 2-component PCA was also performed for visualization purposes, allowing for a 2D representation of the data clusters.
+### 4. Exploratory Data Analysis (EDA)
+Visualizations were created to explore feature relationships and diagnosis patterns:
 
-Exploratory Data Analysis (EDA): Visualizations were created to understand the data distribution, correlations between features, and the relationship between key features and the target variable. This included a diagnosis distribution plot, a correlation heatmap, a boxplot comparing radius_mean across diagnoses, and a PCA visualization with eigenvectors and confidence ellipses.
+- Diagnosis distribution plot
+- Correlation heatmap
+- Radius mean comparison by diagnosis
+- PCA visualization with eigenvectors and confidence ellipses
 
-Saved visualizations are stored in the `images/` folder, including `correlation_heatmap.png`, `diagnosis_distribution.png`, `pca_eigenvectors.png`, and `radius_mean_diagnosis.png`.
+Saved visualizations are available in the `images/` folder:
 
-Data Splitting: The preprocessed and dimensionality-reduced data was split into training (80%) and testing (20%) sets to ensure robust model evaluation.
+- `images/correlation_heatmap.png`
+- `images/diagnosis_distribution.png`
+- `images/pca_eigenvectors.png`
+- `images/radius_mean_diagnosis.png`
 
-Model Building & Training
+### 5. Data Splitting
+- Split data into training (80%) and testing (20%) sets
 
-Five popular classification algorithms were trained on the processed data:
+## Models
+The following classification algorithms were trained and evaluated:
 
-Logistic Regression
+- Logistic Regression
+- K-Nearest Neighbors (KNN)
+- Decision Tree Classifier
+- Random Forest Classifier
+- Support Vector Machine (SVM)
 
-K-Nearest Neighbors (KNN)
+## Evaluation
+Model performance was evaluated using:
 
-Decision Tree Classifier
+- Accuracy
+- Precision
+- Recall
+- F1-score
+- Confusion matrices
+- Training time comparisons
 
-Random Forest Classifier
+## Results
+Logistic Regression achieved the best overall performance, indicating that the PCA-reduced dataset is well-suited to a linear classifier.
 
-Support Vector Machine (SVM)
+## Future Work
+Potential improvements include:
 
-Model Evaluation: Each model's performance was assessed using key metrics such as Accuracy, Precision, Recall, and F1-Score. Confusion matrices were generated to provide a detailed view of true positives, true negatives, false positives, and false negatives. Training times were also recorded for comparison.
+- Implementing K-fold cross-validation for more reliable model evaluation
+- Performing a deeper analysis of PCA loadings to understand feature importance
+- Exploring additional feature engineering and model tuning
 
-Results
-
-After evaluating all models, Logistic Regression emerged as the top-performing model, achieving the highest accuracy and F1-score on the test dataset. This suggests that the data, after PCA, is well-suited for a linear classification approach.
-
-Further Work
-To enhance this analysis and improve model robustness, future work could include:
-
---> K-fold Cross-Validation: Implement K-fold cross-validation for a more reliable estimate of model performance and reduced variance in evaluation metrics.
-
---> Deeper PCA Interpretation: Further analyze PCA loadings to gain deeper insights into which original features contribute most significantly to the principal components.
-
-
-Technologies Used:
-Python, 
-Pandas (for data manipulation), 
-NumPy (for numerical operations), 
-Scikit-learn (for machine learning models, preprocessing, and evaluation), 
-Matplotlib (for plotting), 
-Seaborn (for advanced visualizations)
+## Technologies Used
+- Python
+- Pandas
+- NumPy
+- scikit-learn
+- Matplotlib
+- Seaborn
