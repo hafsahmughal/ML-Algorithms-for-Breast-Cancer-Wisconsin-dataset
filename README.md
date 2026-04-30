@@ -43,7 +43,7 @@ To enhance this analysis and improve model robustness, future work could include
 --> Deeper PCA Interpretation: Further analyze PCA loadings to gain deeper insights into which original features contribute most significantly to the principal components.
 
 
-Technologies Used
+Technologies Used:
 Python, 
 Pandas (for data manipulation), 
 NumPy (for numerical operations), 
