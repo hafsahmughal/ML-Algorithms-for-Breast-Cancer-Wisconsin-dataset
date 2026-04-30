@@ -35,6 +35,7 @@ Support Vector Machine (SVM)
 Model Evaluation: Each model's performance was assessed using key metrics such as Accuracy, Precision, Recall, and F1-Score. Confusion matrices were generated to provide a detailed view of true positives, true negatives, false positives, and false negatives. Training times were also recorded for comparison.
 
 Results
+
 After evaluating all models, Logistic Regression emerged as the top-performing model, achieving the highest accuracy and F1-score on the test dataset. This suggests that the data, after PCA, is well-suited for a linear classification approach.
 
 Further Work
